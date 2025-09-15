@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqa17cwda7xyk"]
+
+[ext_resource type="Texture2D" uid="uid://l4d4agv0krdi" path="res://assets/Cards (medium)/card_back.png" id="1_ufmp2"]
+[ext_resource type="Script" uid="uid://dacm1boj82jd4" path="res://elements/card.gd" id="2_5rf88"]
+[ext_resource type="Texture2D" uid="uid://b6pl6dyar6xjq" path="res://assets/Cards (medium)/card_clubs_02.png" id="3_5rf88"]
+
+[node name="Card" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_ufmp2")
+script = ExtResource("2_5rf88")
+card_front = ExtResource("3_5rf88")
+card_value = "2_clubs"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
