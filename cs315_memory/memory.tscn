@@ -83,6 +83,7 @@ card_value = "5_hearts"
 
 [node name="FlipTimer" type="Timer" parent="."]
 wait_time = 2.0
+one_shot = true
 
 [connection signal="card_selected" from="Game/GridContainer/Card" to="." method="card_clicked"]
 [connection signal="card_selected" from="Game/GridContainer/Card2" to="." method="card_clicked"]
